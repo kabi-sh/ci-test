@@ -1,1 +1,16 @@
+name: My First CI Test
 
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show information
+        run: |
+          echo "Hello from GitHub Actions"
+          whoami
+          pwd
+          ls -la
